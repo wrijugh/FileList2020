@@ -13,9 +13,21 @@ namespace FileListCS
             var _folderPath = @"D:\OneDrive - Microsoft\Wriju_Personal\E_books_OneDriveBus\Bengali";
             GetAllSubDirectories(_folderPath);
 
+            
         }
 
-        int iCount = 1;
+        static void WriteToFile(string fileName, string textToWrite){
+            //Write to the current path - the safe option. 
+            //Else can also write to Documents folder 
+            var fileWrite = File.CreateText(fileName);
+            fileWrite.Write(textToWrite);
+            fileWrite.Close();
+
+            //Then Open File
+            System.Console.WriteLine("Written to : " + fileName);
+        }
+
+        //int iCount = 1;
         static string GetAllSubDirectories(string folderPath, 
                 string fileSearchPattern = "*.*", bool isRecurse = true)
         {
@@ -32,24 +44,24 @@ namespace FileListCS
             {
                 allData = allData + GetFiles(directories[i]);                
             }
-
+            WriteToFile("temp.txt", allData);
             return allData;
         }
 
         static string GetFiles(string directoryPath, string fileSearchPattern = "*.*"){
             //Take the last part of the path as Folder Name to be displayed
             string folderName = directoryPath.Substring(directoryPath.LastIndexOf("\\")+1);
-            string data = "\n" 
+            string data = "\n\n" 
                             + folderName + "\n" 
-                            + GenerateDash(folderName.Length) + "\n";
+                            + GenerateDash(folderName.Length) ;
 
             var files = Directory.GetFiles(directoryPath,"*.pdf");
             for(int i=0; i< files.Length; i++){
-                data = data + "\n" + i.ToString("D2") + ". " + Path.GetFileName(files[i]);                
+                data = data + "\n" + (i+1).ToString("D2") + ". " + Path.GetFileName(files[i]);                
             }
 
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            Console.WriteLine(data);
+            //Console.WriteLine(data);
             return data;
         }
 
