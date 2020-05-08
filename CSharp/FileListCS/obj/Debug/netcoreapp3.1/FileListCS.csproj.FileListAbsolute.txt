@@ -1,0 +1,13 @@
+D:\GitProjs\FileList2020\CSharp\FileListCS\bin\Debug\netcoreapp3.1\FileListCS.exe
+D:\GitProjs\FileList2020\CSharp\FileListCS\bin\Debug\netcoreapp3.1\FileListCS.deps.json
+D:\GitProjs\FileList2020\CSharp\FileListCS\bin\Debug\netcoreapp3.1\FileListCS.runtimeconfig.json
+D:\GitProjs\FileList2020\CSharp\FileListCS\bin\Debug\netcoreapp3.1\FileListCS.runtimeconfig.dev.json
+D:\GitProjs\FileList2020\CSharp\FileListCS\bin\Debug\netcoreapp3.1\FileListCS.dll
+D:\GitProjs\FileList2020\CSharp\FileListCS\bin\Debug\netcoreapp3.1\FileListCS.pdb
+D:\GitProjs\FileList2020\CSharp\FileListCS\obj\Debug\netcoreapp3.1\FileListCS.csprojAssemblyReference.cache
+D:\GitProjs\FileList2020\CSharp\FileListCS\obj\Debug\netcoreapp3.1\FileListCS.csproj.CoreCompileInputs.cache
+D:\GitProjs\FileList2020\CSharp\FileListCS\obj\Debug\netcoreapp3.1\FileListCS.AssemblyInfoInputs.cache
+D:\GitProjs\FileList2020\CSharp\FileListCS\obj\Debug\netcoreapp3.1\FileListCS.AssemblyInfo.cs
+D:\GitProjs\FileList2020\CSharp\FileListCS\obj\Debug\netcoreapp3.1\FileListCS.dll
+D:\GitProjs\FileList2020\CSharp\FileListCS\obj\Debug\netcoreapp3.1\FileListCS.pdb
+D:\GitProjs\FileList2020\CSharp\FileListCS\obj\Debug\netcoreapp3.1\FileListCS.genruntimeconfig.cache
