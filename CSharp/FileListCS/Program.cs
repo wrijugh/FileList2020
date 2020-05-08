@@ -11,9 +11,7 @@ namespace FileListCS
             //Console.WriteLine("Please enter the path:");
            
             var _folderPath = @"D:\OneDrive - Microsoft\Wriju_Personal\E_books_OneDriveBus\Bengali";
-            GetAllSubDirectories(_folderPath);
-
-            
+            GetAllSubDirectories(_folderPath);            
         }
 
         static void WriteToFile(string fileName, string textToWrite){
