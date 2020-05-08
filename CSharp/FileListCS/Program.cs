@@ -10,7 +10,7 @@ namespace FileListCS
         {
             //Console.WriteLine("Please enter the path:");
            
-            var _folderPath = @"D:\OneDrive - Microsoft\Wriju_Personal\E_books_OneDriveBus\Bengali";
+            var _folderPath = @"";
             GetAllSubDirectories(_folderPath);            
         }
 
