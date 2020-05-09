@@ -1,8 +1,16 @@
 
 
+E_books_OneDriveBus
+====================
+01. Energy and Civilization A History.pdf
+02. History-Of-Cooch-Behar.pdf
+03. Italian folktales Italo Calvino.pdf
+04. Primer Of Hinduism - D.S Sharma.pdf
+05. The Prize - The Epic Quest for Oil Money Power (1991) Daniel Yergin.pdf
+06. Van Gogh_DeshMag.pdf
+
 Bengali
 ========
-
 01. Baul Fakir Katha by Sudhir Chakraborty.pdf
 02. Buddhijibir Noteboi - Sudhir Chakrabarty (Amarboi.com).pdf
 03. Desh 1426.pdf
@@ -16,9 +24,21 @@ Bengali
 11. মণীন্দ্র গুপ্তর আত্মজীবনী অক্ষয় মালবেরি.pdf
 12. শামশের আনোয়ারের শ্রেষ্ঠ কবিতা.pdf
 
+Jean-Paul Sartre
+=================
+
+Simone de Beauvoir
+===================
+
+Tech
+=====
+01. Building Microservices Sam Newman.pdf
+02. Containerize_your_Apps_with_Docker_and_Kubernetes.pdf
+03. Linux Fundamentals - Paul C.pdf
+04. The Go Programming Language - Donovan, Alan A. A. Kernigha.pdf
+
 1425 Puja Short Stories
 ========================
-
 01. গোলামপুরের মধুসূদন - প্রচেত গুপ্ত (আনন্দবাজার) .pdf
 02. দহনকাল - শীর্ষ বন্দ্যোপাধ্যায় (দেশ).pdf
 03. দুধের দাত - সমরেশ মজুমদার (আনন্দবাজার).pdf
@@ -38,7 +58,6 @@ Bengali
 
 নীলকন্ঠ পাখির খোঁজে - অতীন বন্দ্যোপাধ্যায়
 ===========================================
-
 01. ঘরবাড়ি - অতীন বন্দ্যোপাধ্যায় (Neel-04).pdf
 02. জলযান ।। অতীন (Neel-02).pdf
 03. পাখির খোঁজে - অতীন বন্দ্যোপাধ্যায় (Neel-01).pdf

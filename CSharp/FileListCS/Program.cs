@@ -8,9 +8,9 @@ namespace FileListCS
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Please enter the path:");
-           
-            var _folderPath = @"";
+            Console.WriteLine("Please enter the path:");                
+            var _folderPath = Console.ReadLine();
+            
             GetAllSubDirectories(_folderPath);            
         }
 
