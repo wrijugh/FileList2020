@@ -52,7 +52,7 @@ namespace FileListCS
                 allData = allData + GetFiles(directories[i]);                
             }
             WriteToFile("list.txt", allData);
-            return allData;
+            return allData; //
         }
 
         static string GetFiles(string directoryPath, string fileSearchPattern = "*.*"){
