@@ -7,4 +7,4 @@ git add "/Python/filelist.py"
 git add "git.sh"
 git commit -m "$desc" 
 git push -u origin master
-read -p "Press any Key" aa
+read -p "Press any Key to terminate" aa
