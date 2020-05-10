@@ -1,0 +1,23 @@
+============
+10-May-2020
+============
+1. Remove the empty directories from the list (Python done)
+2. Check the empty parameter values 
+3. Auto launch List.txt after it is written 
+
+Python:
+------
+1. Write to file 
+2. Only folder name not full path 
+
+C#
+---
+
+PowerShell
+----------
+1. Make it parameterized 
+
+Golang
+------
+1. Open file after written
+2. Only folder name not full path 

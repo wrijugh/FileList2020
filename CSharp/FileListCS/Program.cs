@@ -9,9 +9,11 @@ namespace FileListCS
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter the path:");                
-            var _folderPath = Console.ReadLine();
-            
-            GetAllSubDirectories(_folderPath);            
+            var _folderPath = Console.ReadLine().Trim();
+            if(_folderPath != string.Empty)
+                GetAllSubDirectories(_folderPath);
+            else
+                Console.WriteLine("Please enter the FOLDER path"); 
         }
 
         static void WriteToFile(string fileName, string textToWrite){
