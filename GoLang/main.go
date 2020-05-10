@@ -1,13 +1,16 @@
 /*
-=====================================================
+=====================================================================================================
 Generate a file folder list in Golang
 Created by		:	Wriju Ghosh
 Created on		:	09-May-2020
 Last Updated	:	10-May-2020
+Golang Version	:	go1.13.4
 
 How to run		:	Have Go runtime?
 					Then copy this file and run "go run ."
-=====================================================
+
+Output			:	This would generate List.txt in the same folder where this .go file is located.
+=====================================================================================================
 */
 package main
 
