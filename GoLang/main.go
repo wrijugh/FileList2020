@@ -1,3 +1,14 @@
+/*
+=====================================================
+Generate a file folder list in Golang
+Created by		:	Wriju Ghosh
+Created on		:	09-May-2020
+Last Updated	:	10-May-2020
+
+How to run		:	Have Go runtime?
+					Then copy this file and run "go run ."
+=====================================================
+*/
 package main
 
 import (
@@ -8,11 +19,17 @@ import (
 	"path/filepath"
 	"strconv"
 	"strings"
+	"time"
 )
 
 func main() {
-	folder := ""
-	dirs := getOnlySubDirectories(folder)
+
+	fmt.Print("Enter full folder path: ")
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan() // use `for scanner.Scan()` to keep reading Otherwise Scanfln does not read a line if there is a space
+	folderPath := scanner.Text()
+
+	dirs := getOnlySubDirectories(folderPath)
 
 	dataSlice := []string{""}
 	for _, dir := range dirs {
@@ -20,14 +37,8 @@ func main() {
 		dataSlice = append(dataSlice, files...) //Learned when appending a slice to another we need to use ...
 	}
 
-	//To Print line by line
-	/*textToWrite := "List Generated in datehere " //TODO: FormatDate and also mention the root folder
-	for _, f := range dataSlice {
-		textToWrite = textToWrite + f + "\\r\\n"
-	}*/
-
 	//Write to file
-	writeToFile("list.txt", folder, dataSlice)
+	writeToFile("list.txt", folderPath, dataSlice)
 }
 
 //Get files inside one folder
@@ -57,7 +68,7 @@ func getAllFilesFromOneDirectory(directoryPath string) []string {
 		if !file.IsDir() { //not to add only the folder name. This is not needed in file list
 			//fileSlice,
 			fileSlice = append(fileSlice, strconv.Itoa(i)+". "+file.Name())
-			fmt.Println(i, file.Name())
+			//fmt.Println(i, file.Name())
 			i++
 		}
 	}
@@ -93,7 +104,6 @@ func writeToFile(fileName, rootFolder string, sliceToWrite []string) {
 	//Folder name and created on
 	//Created using Go
 
-	// hline2 :=
 	file, err := os.OpenFile(fileName, os.O_CREATE, 0644)
 
 	if err != nil {
@@ -103,8 +113,9 @@ func writeToFile(fileName, rootFolder string, sliceToWrite []string) {
 	datawriter := bufio.NewWriter(file)
 
 	hline1 := "List for the folder " + rootFolder
-	//hline2 := "On " +
+	hline2 := "On " + time.Now().Format("02-Jan-2006 15:04:01") + " by Golang"
 	_, _ = datawriter.WriteString(hline1 + "\n")
+	_, _ = datawriter.WriteString(hline2 + "\n")
 	//_, _ = datawriter.WriteString(hline2 + "\n")
 	//This is not writing a multiline -----!!!!!!!!!!!
 	for _, data := range sliceToWrite {
@@ -114,4 +125,8 @@ func writeToFile(fileName, rootFolder string, sliceToWrite []string) {
 
 	datawriter.Flush()
 	file.Close()
+
+	fmt.Println("The list generated ")
+	curretDir, _ := os.Getwd()
+	fmt.Println(curretDir + "\\" + fileName)
 }
