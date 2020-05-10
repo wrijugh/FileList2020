@@ -13,7 +13,7 @@ Output          : The list is saved to a file named List.txt in the same executi
 '''
 import os
 from os.path import join, getsize
-
+import sys
 # 
 
 def GetAllSubFoldersAndFiles(folderPath):
@@ -33,4 +33,4 @@ def GetAllSubFoldersAndFiles(folderPath):
 
 if __name__ == '__main__':
     # can use sys.args[1] for the argument which takes path
-    GetAllSubFoldersAndFiles(folderPath = "")
+    GetAllSubFoldersAndFiles(folderPath = sys.argv[1])
