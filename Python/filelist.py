@@ -20,7 +20,7 @@ def GetAllSubFoldersAndFiles(folderPath):
     fileToWrite = open("list.txt", mode="wt", encoding="utf-8")
     for root, dirs, files in os.walk(folderPath):
         
-        # print (root, "consumes", end=" ")
+        # print (root, "consumes", end=" ")a
         # print(sum(getsize(join(root, name)) for name in files), end=" \r\n")
         if (len(files) != 0): # remove empty directories             
             fileToWrite.writelines("\n" + root + "\n")
