@@ -40,7 +40,7 @@ func main() {
 		dataSlice = append(dataSlice, files...) //Learned when appending a slice to another we need to use ...
 	}
 
-	//Write to file
+	//Write to file -a
 	writeToFile("list.txt", folderPath, dataSlice)
 }
 
