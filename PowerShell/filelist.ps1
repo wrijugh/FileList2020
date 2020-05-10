@@ -13,12 +13,12 @@ $outputFile = "c:\temp\FileList_" + $fileDate +".csv"
 $fileExtension = ".pdf"
  
 Get-ChildItem -Path $rootFolder -Filter $fileExtension -recurse | ? {$_.PSIsContainer -eq $False} | % {
-$obj = New-Object PSObject
- 
-$obj | Add-Member NoteProperty Name $_.Name
-$obj | Add-Member NoteProperty Directory $_.DirectoryName.Replace($rootFolder + "\","")
- 
-$arr += $obj
+    $obj = New-Object PSObject
+    
+    $obj | Add-Member NoteProperty Name $_.Name
+    $obj | Add-Member NoteProperty Directory $_.DirectoryName.Replace($rootFolder + "\","")
+    
+    $arr += $obj
 }
  
 $arr | Export-CSV -Path $outputFile -noTypeInformation -Force

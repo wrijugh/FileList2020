@@ -1,7 +1,7 @@
 ============
 10-May-2020
 ============
-1. Remove the empty directories from the list (Python done)
+1. Remove the empty directories from the list (Python done, C# and Golang pending)
 2. Check the empty parameter values 
 3. Auto launch List.txt after it is written 
 
@@ -9,6 +9,7 @@ Python:
 ------
 1. Write to file 
 2. Only folder name not full path 
+3. Append file serial number (convert to string if possible zero based two character each)
 
 C#
 ---

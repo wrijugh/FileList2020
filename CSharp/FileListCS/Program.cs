@@ -25,6 +25,8 @@ namespace FileListCS
 
             //Then Open File
             System.Console.WriteLine("Written to : " + fileName);
+
+            //TODO: Open the file for read
         }
 
         //int iCount = 1;
@@ -32,6 +34,11 @@ namespace FileListCS
                 string fileSearchPattern = "*.*", bool isRecurse = true)
         {
             string allData = string.Empty;
+            allData = "=========================================" +
+                    "This list is generated for " +
+                    folderPath + 
+                    "On " + DateTime.Now.ToString()+
+                    "by C# .NetCore 3";
 
             EnumerationOptions recurse = new EnumerationOptions();
             recurse.RecurseSubdirectories = true;
@@ -44,7 +51,7 @@ namespace FileListCS
             {
                 allData = allData + GetFiles(directories[i]);                
             }
-            WriteToFile("temp.txt", allData);
+            WriteToFile("list.txt", allData);
             return allData;
         }
 

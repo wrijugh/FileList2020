@@ -17,7 +17,7 @@ import sys
 # 
 
 def GetAllSubFoldersAndFiles(folderPath):
-    fileToWrite = open("List.txt", mode="wt", encoding="utf-8")
+    fileToWrite = open("list.txt", mode="wt", encoding="utf-8")
     for root, dirs, files in os.walk(folderPath):
         
         # print (root, "consumes", end=" ")
