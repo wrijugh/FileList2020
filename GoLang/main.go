@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	folder := "D:\\OneDrive - Microsoft\\Wriju_Personal\\E_books_OneDriveBus"
+	folder := ""
 	dirs := getOnlySubDirectories(folder)
 
 	dataSlice := []string{""}
